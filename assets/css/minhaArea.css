@@ -1,0 +1,357 @@
+
+.card-home {
+    background-color: #7f37c9;
+    color: #fff;
+    width: 100%;
+    min-height: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 10px 40px #00000056;
+    border-radius: 12px;
+}
+
+
+.card-home .header {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-home .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-home .footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+/* ---- CARDS SECUNDÁRIOS ---- */
+.card-home2, .card-home3 {
+    background-color: #fff;
+    color: #6f42c1;
+    width: 100%;
+    max-width: 1350px;
+    min-height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+/* Ajuste específico do card de resumo */
+.card-home3 {
+    max-width: 500px;
+    min-height: 200px;
+}
+
+/* CONTAINERS */
+.container-home2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container-home3 {
+    flex: 1 1 350px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+/* IMAGEM + GRÁFICOS LADO A LADO */
+.dashboard-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap; /* quebra no celular */
+    margin-top: 20px;
+}
+
+.img-box {
+    flex: 1 1 200px; 
+    max-width: 300px; 
+}
+
+.img-box img {
+    width: 280px;  
+    height: 485px;      
+    object-fit: cover; 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.graficos-box {
+    flex: 2 1 600px;
+}
+
+.graficos-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ---- TABELA ---- */
+.table-roxa2 {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fdfdff;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 0%;
+}
+
+.table-roxa2 thead {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.table-roxa2 th,
+.table-roxa2 td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+}
+
+.table-roxa2 tbody tr:nth-child(even) {
+    background-color: #f3e9ff;
+}
+
+.table-roxa2 tbody tr:hover {
+    background-color: #e0ccff;
+}
+
+/* ---- TIPOGRAFIA ---- */
+.h1home {
+    color: #3e0b9c;
+    text-align: center;
+}
+
+.a {
+    text-align: center;
+    margin-top: 10px;
+    color: #694aa3;
+}
+
+.b {
+    text-align: center;
+}
+
+.btn-home-container {
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+}
+
+.btn-home {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10%;
+    transition: 0.2s;
+}
+
+.btn-home:hover {
+    background-color: #532d91;
+}
+
+@media (max-width: 600px) {
+    .btn-home-container {
+        justify-content: center; 
+    }
+    .btn-home {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* ---- RESPONSIVIDADE ---- */
+@media (max-width: 900px) {
+    .dashboard-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .graficos-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-home2, .card-home3 {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-home, .card-home2, .card-home3 {
+        width: 100%;
+        padding: 15px;
+        min-height: auto;
+    }
+    .card-home .header, .card-home2 .header, .card-home3 .header {
+        font-size: 1.2em;
+    }
+    .btn-home {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+}
+
+.card-container4 {
+    display: flex;
+    justify-content: center; 
+    gap: 100px; 
+    margin-top: 5%;
+}
+
+.card-home4,
+.card-home5 {
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: #7f00fd;
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    .card-container4 {
+        flex-direction: column; /* empilha os cards */
+        align-items: center;    /* centraliza cards empilhados */
+        margin-left: 0;
+    }
+
+    .card-home4,
+    .card-home5 {
+        width: 90%;
+        margin-bottom: 20px; /* espaço entre os cards empilhados */
+    }
+}
+
+
+.trofeu {
+    color: #ffc400;
+}
+
+.alerta{
+    color: red;
+}
+
+.card-home4 .card-deck {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-home5 .card-deck {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.caderno-box {
+    flex: 1;
+}
+
+.personagem-box img {
+    max-height: 200px;
+    width: auto;
+}
+
+.h4v {
+    text-align: center;
+}
+
+.j {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.bq{
+    background-color: #00000000 !important;
+    color: rgb(0, 0, 0) !important;
+    
+}
+
+.bq:hover{
+    background-color: #ffffff !important;
+}
+
+.pagination-controls2 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pagination-controls2 button {
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.pagination-controls2 button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.pagination-controls {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pagination-controls button {
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.pagination-controls button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.pagination-controls3 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.pagination-controls3 button {
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.pagination-controls3 button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+

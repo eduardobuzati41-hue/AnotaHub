@@ -1,0 +1,69 @@
+.notebook-card2 {
+    flex: 0 0 28rem; 
+    max-width: 28rem;
+    min-height: 280px;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #7f37c9;
+    box-shadow: 0 4px 15px #272727;
+}
+
+.notebook-card2:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    border: 1px solid #555;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.card-header2 {
+    color: #1a1a1a !important;
+    background-color: white !important;
+    margin: 0;
+}
+
+.vide {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.btnExcluir2 {
+    background-color: transparent;
+    border: none;
+    color: #7f37c9;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 2%;
+    transition: color 0.3s ease;
+}
+
+.btnExcluir2:hover {
+    color: #4b0096;
+}

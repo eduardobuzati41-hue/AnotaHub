@@ -1,0 +1,214 @@
+#editor {
+    background-color: #fffef0;
+    padding: 0px !important;
+    border: 1px solid #ccc;
+    border-radius: 8px !important;
+    line-height: 5.8;
+    font-family: 'Segoe UI', 'Georgia', serif;
+    font-size: 20px;
+    position: relative;
+    background-image: 
+        linear-gradient(to right, red 10px, transparent 10px);
+    background-size: 100% 40px, 100% 100%;
+    background-repeat: repeat-y;
+}
+
+#editor.ql-container{
+    height: 500px;
+}
+
+.caderno h1 {
+    font-family: 'Georgia', serif;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.caderno {
+    background-color: #fdfcf9;
+    padding: 20px 40px;
+    margin: 30px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.tabelaG{
+    text-align: center;
+}
+
+#editor {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite rolar horizontalmente em telas pequenas */
+    -webkit-overflow-scrolling: touch; /* Rolagem suave no iOS */
+    border-radius: 8px;
+}
+
+.table-roxa {
+    width: 100%;
+    min-width: 600px; /* Evita que o conteúdo quebre demais em telas pequenas */
+    border-collapse: collapse;
+    background-color: #fdfdff;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-roxa thead {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.table-roxa th,
+.table-roxa td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-roxa tbody tr:nth-child(even) {
+    background-color: #f3e9ff;
+}
+
+.table-roxa tbody tr:hover {
+    background-color: #e0ccff;
+}
+
+/* Ajuste de tamanho e fonte em telas pequenas */
+@media (max-width: 768px) {
+    .table-roxa th, .table-roxa td {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-roxa th, .table-roxa td {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
+
+.btn-roxo {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-roxo:hover {
+    background-color: #5a32a3;
+}
+
+.al{
+     display: none;
+}
+
+
+.b{
+    background-color: #5a32a3 !important;
+    color: white !important;
+    
+}
+
+.b:hover{
+    background-color: #765fa1 !important;
+}
+
+.fav{
+    background-color: #6a5691 !important;
+}
+
+.fav:hover{
+    background-color: #6635c2 !important;
+}
+
+
+.fav .estrela {
+    color: rgb(207, 207, 207); 
+}
+
+.btn-check:checked + .fav .estrela {
+    color: yellow; 
+}
+
+.ocult{
+    background-color: #6a5691 !important;
+}
+
+.ocult:hover{
+    background-color: #6635c2 !important;
+}
+
+
+.ocult .olho {
+    color: rgb(207, 207, 207); 
+}
+
+.btn-check:checked + .ocult .olho {
+    color: rgb(0, 0, 0); 
+}
+
+
+p,
+label {
+  font:
+    1rem "Fira Sans",
+    sans-serif;
+}
+
+input {
+  margin: 0.4rem;
+}
+
+.color-picker-box {
+    margin-top: 20px;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.color-btn-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.color-btn-wrapper input[type="color"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    margin-left: 20%;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.color-btn-wrapper input[type="color"]:hover {
+    transform: scale(1.1);
+}
+
+.color-btn-wrapper input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 8px;
+}
+
+.color-btn-wrapper input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 8px;
+}
