@@ -9,7 +9,7 @@ include "includes/header.php";
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100 img-fluid" src="assets/img/Home.png" alt="First slide">
+        <img class="d-block w-100 img-fluid" src="assets/img/home2.png" alt="First slide">
         <div class="container">
           <?php
           if (!(isset($_COOKIE["token"]))) {
