@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost/tcc_smart/ws/";
+const baseUrl = window.location.origin + '/ws/';
 
 function validaNome(n) {
     let erroNome = document.getElementById("nameError");

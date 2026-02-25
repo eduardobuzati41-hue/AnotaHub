@@ -2,13 +2,12 @@
 
 function conectar()
 {
-    $servidor = "localhost";
-    $usuario = "root";
-    $senha = "";
-    $bd = "anotahub";
-    $porta = 3306;
+    $servidor = "sql213.infinityfree.com";
+    $usuario = "if0_41240169";
+    $senha = "fLTHEyEcGxpojf8";
+    $bd = "if0_41240169_anotahub";
 
-    $conexao = mysqli_connect($servidor, $usuario, $senha, $bd, $porta);
+    $conexao = mysqli_connect($servidor, $usuario, $senha, $bd);
 
     if (!$conexao) {
         die("Erro ao conectar no banco de dados " . mysqli_connect_error());
