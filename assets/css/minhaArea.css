@@ -33,7 +33,6 @@
     color: #fff;
 }
 
-/* ---- CARDS SECUNDÁRIOS ---- */
 .card-home2, .card-home3 {
     background-color: #fff;
     color: #6f42c1;
@@ -48,13 +47,11 @@
     box-shadow: 0px 10px 40px #00000056;
 }
 
-/* Ajuste específico do card de resumo */
 .card-home3 {
     max-width: 500px;
     min-height: 200px;
 }
 
-/* CONTAINERS */
 .container-home2 {
     display: flex;
     justify-content: center;
@@ -71,13 +68,12 @@
     justify-content: center;
 }
 
-/* IMAGEM + GRÁFICOS LADO A LADO */
 .dashboard-row {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
-    flex-wrap: wrap; /* quebra no celular */
+    flex-wrap: wrap; 
     margin-top: 20px;
 }
 
@@ -105,7 +101,6 @@
     justify-content: center;
 }
 
-/* ---- TABELA ---- */
 .table-roxa2 {
     width: 100%;
     border-collapse: collapse;
@@ -136,7 +131,6 @@
     background-color: #e0ccff;
 }
 
-/* ---- TIPOGRAFIA ---- */
 .h1home {
     color: #3e0b9c;
     text-align: center;
@@ -184,7 +178,6 @@
     }
 }
 
-/* ---- RESPONSIVIDADE ---- */
 @media (max-width: 900px) {
     .dashboard-row {
         flex-direction: column;
@@ -234,15 +227,15 @@
 
 @media (max-width: 1000px) {
     .card-container4 {
-        flex-direction: column; /* empilha os cards */
-        align-items: center;    /* centraliza cards empilhados */
+        flex-direction: column; 
+        align-items: center;  
         margin-left: 0;
     }
 
     .card-home4,
     .card-home5 {
         width: 90%;
-        margin-bottom: 20px; /* espaço entre os cards empilhados */
+        margin-bottom: 20px;
     }
 }
 

@@ -45,14 +45,14 @@
 
 .table-container {
     width: 100%;
-    overflow-x: auto; /* Permite rolar horizontalmente em telas pequenas */
-    -webkit-overflow-scrolling: touch; /* Rolagem suave no iOS */
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
     border-radius: 8px;
 }
 
 .table-roxa {
     width: 100%;
-    min-width: 600px; /* Evita que o conteúdo quebre demais em telas pequenas */
+    min-width: 600px; 
     border-collapse: collapse;
     background-color: #fdfdff;
     font-family: 'Segoe UI', sans-serif;
@@ -81,7 +81,6 @@
     background-color: #e0ccff;
 }
 
-/* Ajuste de tamanho e fonte em telas pequenas */
 @media (max-width: 768px) {
     .table-roxa th, .table-roxa td {
         padding: 10px 12px;

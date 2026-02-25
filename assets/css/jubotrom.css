@@ -64,7 +64,7 @@
 
 
     .card-link:hover .notebook-card {
-        transform: scale(1.05);  /* Aumenta o tamanho do card um pouco */
+        transform: scale(1.05); 
         transition: transform 0.3s ease; 
     }
 
