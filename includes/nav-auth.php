@@ -16,7 +16,7 @@ $agora = date('H:i:s');
 
 <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-white rounded">
   <div class="container-fluid">
-    <img class="" src="./assets/img/AnotaHub.png" width="6%">
+    <img class="anota" src="./assets/img/AnotaHub.png">
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

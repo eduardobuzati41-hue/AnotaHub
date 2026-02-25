@@ -1299,3 +1299,9 @@ mo .card-add {
 .lo{
   color: #6f42c1 !important;
 }
+
+.anota {
+    width: 6%;
+    min-width: 70px; 
+    height: auto;
+}
